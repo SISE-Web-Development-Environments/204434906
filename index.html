@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link href="lity-2.4.0/dist/lity.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <link rel="stylesheet" type="text/css" href="style.css" />
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.css" rel="stylesheet">
@@ -41,13 +43,10 @@
 <div class="wrapper">
   <section id="about" class="section">
     <br />
-    <br />
-    <br />
-    <br />
+
     about me
-    <br />
-    <br />
-    <p>
+      <div class="mytext" id="textmy">
+    <p class="a">
       Hi! my name is Yaara. I am a junior year student for Software and Information  <br />
       Systems Engineering at Ben Gurion University.
       <br />Originally I'm from Kibbutz Ma'agan Michael which is situated on the sea.  
@@ -57,28 +56,76 @@
  <br /> My favorite styles are modern dance, jazz and ballet. 
 <br />This is my first website! I'm very excited about it, and hope this course will make me a better programmer.
     </p>
-    <br />
-    <br />
+    </div>
+  
   </section>
 
   <section id="photos" class="section">
-       <br />
-    <br />
-    <br />
-    <br />
-    <br />
+ 
     <br />
     <br />
     <br />
     my photos
     <br />
     <br />
-    <img src="beach1.jpg" alt="Trulli" width="400" height="400">
+    <!-- <img src="beach1.jpg" alt="Trulli" width="400" height="400">
     <img src="deadsea.jpeg" alt="Trulli" width="400" height="400">
-    <img src="india.jpeg" alt="Trulli" width="400" height="400">
-    <br />
-    <br />
-    <br />
+    <img src="india.jpeg" alt="Trulli" width="400" height="400"> -->
+ 
+    
+    <div class="w3-content w3-display-container" style="max-width:600px">
+      <img class="mySlides" src="p1.jpg" style="width:100%">
+      <img class="mySlides" src="beach1.jpg" style="width:100%">
+      <img class="mySlides" src="p8.JPG" style="width:100%">
+      <img class="mySlides" src="deadsea.jpeg" style="width:100%">
+      <img class="mySlides" src="p2.JPG" style="width:100%">
+      <img class="mySlides" src="p3.jpg" style="width:100%">
+      <img class="mySlides" src="p4.JPG" style="width:100%">
+      <img class="mySlides" src="p5.JPG" style="width:100%">
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki " onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+      </div>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " w3-white";
+    }
+    </script>
+    
+
   </section>
 
   <section id="playlist" class="section">
@@ -86,32 +133,27 @@
     <br />
     <br />
     <br />
-    <br />
-    <br />
-    <br />
+ 
     my playlist
     <br />
     <br />
     <iframe width="900" height="506" src="https://www.youtube.com/embed/WyfkfEDX_ik" frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section>>
+      </section>
     <section id="like" class="section">
       <br />
       <br />
       <br />
-      give me a like
+      give red-band like
       <br />
       <br />
       <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FRedBandLIVE%2F&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" width="450" height="35"
        scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-      <br />
-      <br />
+
     </section>
 
     <section id="qrcoder" class="section">
-      <br />
-      <br />
-      <br />
+   
       <br />
       <br />
       <br />
@@ -147,8 +189,7 @@
       
       contact me 
       <section id="contact" class="section">
-        <br />
-      <br />
+  
       <br />
       <br />
       <form method="post" action="mailto:yaararum@post.bgu.ac.il"  enctype="text/plain" >  

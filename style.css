@@ -15,6 +15,8 @@
 }
 #contact{
 	text-align: left;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 15px;
 }
 
   .header{
@@ -37,6 +39,7 @@
 	width: 100%;
 	height: 60px;
 	background-color: thistle;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
   body {
 	background-image: url("backp2.jpg");
@@ -44,7 +47,8 @@
 	background-repeat: repeat;
 	/*background-size: cover;*/
 	text-align: center;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+	font-size: 30px;
+	font-family: Impact, fantasy	;
   }
   .top-left a {
 	float: left;
@@ -59,15 +63,24 @@
   .top-left a:hover {
 	background-color: rgb(212, 154, 154);
 	color: rgb(255, 255, 255);
-	height: 30px;
+	height: 60px;
 
   }
- 
+  p.a{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 15px;
+}
+ #mytext{
+	font-size: 15px;
+	font-family: FreeMono, monospace	;
+ }
   footer{
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 5px;
-	background-color:  thistle;
+	font-size: 15px;
+	font-family:Andale Mono, monospace	;
+	background-color: #FFC0CB;
   }
   .socialbtns ul {
 	  list-style: none;
@@ -94,110 +107,10 @@
 	color: black;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-  .slider, .load, .principal, .content {
-	margin: 0;
-	padding: 0;
-  }
+  .mySlides {display:none
+}
   
-  /* .slider{
-	margin-top: -10px;
-  } 
-  
-  .load {
-	animation: slide 2s;
-  }
-  
-  .slider {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 100vh;
-	animation: slide 30s infinite;
-  }
-  
-  .content{
-	 color: #4a8b5c; 
-	color: white;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.1);
-  }
-  .principal{
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	position: relative;
-	letter-spacing: 5px;
-	text-align: center;
-  }
-  
-  /* .principal h1 {
-	font-size: 70px;
-	margin-bottom: 20px;
-  } */
-  
-  /* .principal p {
-	font-size: 20px;
-  } */
-  
-  @keyframes slide {
-	0%{
-	  background-image: url('p1.jpg');
-	}
-	14.3%{
-	  background-image: url('p2.JPG');
-	}
-	14.301%{
-	  background-image: url('p3.jpg');
-	}
-	28.6%{
-	  background-image: url('p4.JPG');
-	}/*
-	28.601%{
-	  background-image: url('static/img/slideshow/3.jpg');
-	}
-	42.9%{
-	  background-image: url('static/img/slideshow/3.jpg');
-	}
-	42.901%{
-	  background-image: url('static/img/slideshow/4.jpg');
-	}
-	57.2%{
-	  background-image: url('static/img/slideshow/4.jpg');
-	}
-	57.201%{
-	  background-image: url('static/img/slideshow/5.jpg');
-	}
-	71.5%{
-	  background-image: url('static/img/slideshow/5.jpg');
-	}
-	71.501%{
-	  background-image: url('static/img/slideshow/6.jpg');
-	}
-	85.8%{
-	  background-image: url('static/img/slideshow/6.jpg');
-	}
-	85.801%{
-	  background-image: url('static/img/slideshow/7.jpg');
-	}
-	100%{
-	  background-image: url('static/img/slideshow/7.jpg');
-	}*/
-  }
+  .w3-left, .w3-right, .w3-badge {cursor:pointer}
+  .w3-badge {height:13px;width:13px;padding:0}
+
   
