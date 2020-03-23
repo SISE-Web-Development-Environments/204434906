@@ -2,25 +2,42 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link href="lity-2.4.0/dist/lity.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.js"> </script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="lity-2.4.0/vendor/jquery.js"></script>
+  <script src="lity-2.4.0/dist/lity.js"></script>
 </head>
 
 <body>
-  <div id="menu">
-    <img class="logo" src="images-removebg-preview.png"> 
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#photos">My Photos</a></li>
-      <li><a href="#playlist">My Playlist</a></li>
-      <li><a href="#like">Like</a></li>
-      <li><a href="#qrcoder">QR code</a></li>
-      <li><a href="#spa">Q&A</a></li>
-      <li><a href="#contact">Contact Me</a></li>
-    </ul>
-  </div>
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
 
+  <header>
+     <nav>
+      <div class="top-left"   id="menu" >
+      <img class="logo" src="seashell-removebg-preview.png" ALIGN=Left> 
+    
+      <a href="#about">About Me</a>
+      <a href="#photos">My Photos</a>
+      <a href="#playlist">My Playlist</a>
+      <a href="#like">Like</a>
+      <a href="#qrcoder">QR code</a>
+      <a href="#spa">Q&A</a>
+      <a href="#contact">Contact Me</a>
+    
+      </div>
+     </nav>
+  </header>
+<div class="wrapper">
   <section id="about" class="section">
-    <br />
     <br />
     <br />
     <br />
@@ -29,28 +46,21 @@
     <br />
     <br />
     <p>
-      Hi! my name is Yaara, a junior year student for Software and Information Systems Engineer.
-      originally i'm from kibbutz maagan michael, just near the sea. you should come visit there,
-      i think its the most beautiful beach in israel (in an objective way).
-
-      beside my love to the sea, i really like to dance.
-      during my high school years i dancing in a profeesional studio and dedicated most
-      of my time to it. my favorite style is modern dance, jazz and ballet.
+      Hi! my name is Yaara. I am a junior year student for Software and Information  <br />
+      Systems Engineering at Ben Gurion University.
+      <br />Originally I'm from Kibbutz Ma'agan Michael which is situated on the sea.  
+<br />You should come and visit us. I think it is the most beautiful beach in Israel (and I am objective). 
+<br />Besides my love for the sea, l really like to dance.  
+<br />During my high school years I danced in a professional studio and dedicated most of my time to it.
+ <br /> My favorite styles are modern dance, jazz and ballet. 
+<br />This is my first website! I'm very excited about it, and hope this course will make me a better programmer.
     </p>
     <br />
     <br />
   </section>
 
   <section id="photos" class="section">
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+       <br />
     <br />
     <br />
     <br />
@@ -71,12 +81,18 @@
 
   <section id="playlist" class="section">
     <br />
- 
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     my playlist
     <br />
     <br />
     <iframe width="900" height="506" src="https://www.youtube.com/embed/WyfkfEDX_ik" frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>>
     <section id="like" class="section">
       <br />
       <br />
@@ -98,67 +114,59 @@
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       scan my code
       <br />
+      <br />
+      <img src="qr.png" alt="Trulli" >
       <br />
       <br />
     </section>
 
     <section id="spa" class="section">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      
       <br />
       <br />
       ans
       <br />
       <br />
       <br />
-    </section>
-
-    <section id="contact" class="section">
       <br />
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      contact me
       <br />
       <br />
       <br />
     </section>
 
+  
+      <br />
+      
+      
+      contact me 
+      <section id="contact" class="section">
+        <br />
+      <br />
+      <br />
+      <br />
+      <form method="post" action="mailto:yaararum@post.bgu.ac.il"  enctype="text/plain" >  
+        <p >Email:
+        <input type="text" placeholder="enter your e-mail.." name="mail" required name="mail" style= "width: 200px">
+      </p>
+        <p s>Subject:  <input type="text" placeholder="enter your subject.." name="subject" required name="Name" style= "width: 300px"></p>
+       
+       
+        <p > Message: </p>
+              <textarea type="text" id ="textarea" ROWS="4" COLS="36" name="comment" required name="Comment" >
+
+              </textarea>
+              <br>   
+
+              <input type="submit" value="send">
+              <input type="reset" value="clear">
+      <br />
+    </section>
+  </div>
 
     <script type="text/javascript">
       $(function () {
@@ -173,6 +181,26 @@
         $('#menu').toggle($(this).scrollTop() > 1000)
       });​
     </script>
+      <script>
+        $("#textarea").emojioneArea({
+          pickerPosition:"right"
+        })
+      </script>
+   <footer>
+    <div id="contactreal" class="socialbtns">     
+        <ul>
+            <li>Contact me at:</li>
+            <li><a href="https://github.com/yaararm" target="_blank"> <i class="fa fa-lg fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/yaara_rumney/" target="_blank"> <i class="fa fa-lg fa-instagram"></i></a></li>
+            <li><a href="mailto:yaararm@gmail.com"><i class="fa fa-lg fa-envelope"></i></a></li>
+        </ul>
+    </div>
+    <span class=credits>
+        Code and design by Yaara Rumney
+     
+
+    </span>
+</footer>     
 </body>
 
 </html>
