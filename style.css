@@ -19,12 +19,27 @@
 	font-size: 15px;
 }
 
+h1 {
+
+	color: rgba(255, 192, 128, 0.712);
+	text-align: center;
+	font-size: 30px;
+	font-family: Impact, fantasy	;
+}	
+.h1:before, .h1:after {
+	content: "";
+	flex: 1 1;
+	border-bottom: 3px solid rgb(255, 179, 179);
+	margin: auto;
+}
+
   .header{
 	padding: 40px;
 	text-align: right;
 	background: #FFE4E1;
 	color: gray;
 	font-size: 20px;
+	position: fixed;
 
   }
   .wrapper {
@@ -47,8 +62,8 @@
 	background-repeat: repeat;
 	/*background-size: cover;*/
 	text-align: center;
-	font-size: 30px;
-	font-family: Impact, fantasy	;
+	font-size: 15px;
+	font-family: FreeMono, monospace	;
   }
   .top-left a {
 	float: left;
@@ -119,3 +134,35 @@
 		font-size: 15px;
 	
  } 
+
+
+ .tg {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+
+ .tg td {
+   font-size: 14px;
+   padding: 10px 5px;
+   border-style: solid;
+   border-width: 1px;
+   overflow: hidden;
+   word-break: normal;
+   border-color: black;
+ }
+
+ .tg th {
+   font-size: 14px;
+   font-weight: normal;
+   padding: 10px 5px;
+   border-style: solid;
+   border-width: 1px;
+   overflow: hidden;
+   word-break: normal;
+   border-color: black;
+ }
+
+ .tg .tg-0lax {
+   text-align: left;
+   vertical-align: top
+ }
