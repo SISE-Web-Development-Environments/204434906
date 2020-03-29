@@ -166,6 +166,7 @@ p.d {
    border-spacing: 0;
    text-align: center;
    align-content: center;
+  
  }
 
  .tg td {
@@ -188,6 +189,9 @@ p.d {
 	word-break: normal;
 	border-color: black;
   }
+
+
+
   .te {
 	border-collapse: collapse;
 	border-spacing: 0;
