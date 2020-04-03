@@ -1,5 +1,7 @@
-# Yaara's website
+# Rinas's website
 my name is Yaara Rumney, and this is my first website!
+
+I've decided to dedicate it to my beloving grandmother- Rina Treidel.
 
 I hope you will enjoy it, like i enjoyed building it!
 
